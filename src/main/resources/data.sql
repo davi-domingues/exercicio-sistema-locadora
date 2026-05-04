@@ -1,0 +1,32 @@
+INSERT INTO cliente (id, nome, email) VALUES (1, 'Ana Souza', 'ana.souza@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (2, 'Bruno Lima', 'bruno.lima@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (3, 'Carla Mendes', 'carla.mendes@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (4, 'Diego Alves', 'diego.alves@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (5, 'Eduarda Costa', 'eduarda.costa@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (6, 'Felipe Rocha', 'felipe.rocha@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (7, 'Gisele Martins', 'gisele.martins@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (8, 'Henrique Dias', 'henrique.dias@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (9, 'Isabela Nunes', 'isabela.nunes@example.com');
+INSERT INTO cliente (id, nome, email) VALUES (10, 'Joao Pereira', 'joao.pereira@example.com');
+
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (1, 'A Ponte Azul', 'Drama', 'Marcos Silva');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (2, 'Sombras do Norte', 'Suspense', 'Paula Reis');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (3, 'Rota 27', 'Acao', 'Carlos Almeida');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (4, 'O Ultimo Trem', 'Drama', 'Lucia Ferraz');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (5, 'Ventos do Sul', 'Romance', 'Andre Campos');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (6, 'Cidade de Vidro', 'Ficcao', 'Renata Paiva');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (7, 'Horizonte Vermelho', 'Aventura', 'Tiago Ramos');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (8, 'Noite Clara', 'Comedia', 'Patricia Melo');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (9, 'Eco do Mar', 'Drama', 'Rafael Duarte');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (10, 'Fragmentos', 'Suspense', 'Juliana Pires');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (11, 'A Vila', 'Terror', 'Marina Lopes');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (12, 'Cinzas e Neve', 'Drama', 'Eduardo Moraes');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (13, 'Labirinto Urbano', 'Acao', 'Vinicius Araujo');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (14, 'Dois Caminhos', 'Romance', 'Beatriz Santos');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (15, 'Som do Vento', 'Aventura', 'Gabriel Freitas');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (16, 'Luz de Inverno', 'Drama', 'Camila Barros');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (17, 'Ponto Cego', 'Suspense', 'Ricardo Azevedo');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (18, 'Jardim Secreto', 'Fantasia', 'Sofia Teixeira');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (19, 'Corrida Final', 'Acao', 'Pedro Matos');
+INSERT INTO filme (id, titulo, genero, diretor) VALUES (20, 'A Chave', 'Misterio', 'Lorena Prado');
+
