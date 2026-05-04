@@ -2,7 +2,6 @@ package br.com.solutis.sistemalocadora.controller;
 
 import br.com.solutis.sistemalocadora.dto.request.ClienteRequest;
 import br.com.solutis.sistemalocadora.dto.response.ClienteResponse;
-import br.com.solutis.sistemalocadora.entity.Cliente;
 import br.com.solutis.sistemalocadora.service.ClienteService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
