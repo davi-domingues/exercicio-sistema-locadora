@@ -3,6 +3,7 @@ package br.com.solutis.sistemalocadora.service;
 import br.com.solutis.sistemalocadora.dto.request.LocacaoRequest;
 import br.com.solutis.sistemalocadora.dto.response.LocacaoResponse;
 import br.com.solutis.sistemalocadora.entity.Locacao;
+import br.com.solutis.sistemalocadora.exception.ClienteAlreadyInUseException;
 import br.com.solutis.sistemalocadora.exception.EntityNotFoundException;
 import br.com.solutis.sistemalocadora.exception.FilmeAlreadyInUseException;
 import br.com.solutis.sistemalocadora.mapper.LocacaoMapper;
@@ -35,6 +36,10 @@ public class LocacaoService {
 
         if(repository.existsByFilmeIdAndDevolvidoEquals(locacaoRequest.getIdFilme(), false)){
             throw new FilmeAlreadyInUseException("Filme já está locado");
+        }
+
+        if(repository.existsByClienteIdAndDevolvidoEquals(locacaoRequest.getIdCliente(), false)){
+            throw new ClienteAlreadyInUseException("Cliente já está locando um filme");
         }
 
         Locacao locacao = LocacaoMapper.toEntity(locacaoRequest);
