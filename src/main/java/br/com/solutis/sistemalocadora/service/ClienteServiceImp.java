@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("cliente-service-imp")
 public class ClienteServiceImp implements ClienteService {
 
     private final ClienteRepository repository;

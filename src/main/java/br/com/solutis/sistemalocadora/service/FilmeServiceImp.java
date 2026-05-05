@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("filme-service-imp")
 public class FilmeServiceImp implements FilmeService {
 
     private final FilmeRepository repository;

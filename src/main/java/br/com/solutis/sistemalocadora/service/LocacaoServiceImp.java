@@ -16,7 +16,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Service("locacao-service-imp")
 public class LocacaoServiceImp implements LocacaoService {
 
     private final LocacaoRepository repository;

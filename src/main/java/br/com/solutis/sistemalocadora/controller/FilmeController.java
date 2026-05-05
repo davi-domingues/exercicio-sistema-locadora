@@ -3,6 +3,7 @@ package br.com.solutis.sistemalocadora.controller;
 import br.com.solutis.sistemalocadora.dto.request.FilmeRequest;
 import br.com.solutis.sistemalocadora.dto.response.FilmeResponse;
 import br.com.solutis.sistemalocadora.service.FilmeService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +16,7 @@ public class FilmeController {
 
     private final FilmeService service;
 
-    public FilmeController(FilmeService service) {
+    public FilmeController(@Qualifier("filme-service-imp") FilmeService service) {
         this.service = service;
     }
 
