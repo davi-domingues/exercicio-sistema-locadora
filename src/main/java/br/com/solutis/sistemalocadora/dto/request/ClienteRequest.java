@@ -1,5 +1,6 @@
 package br.com.solutis.sistemalocadora.dto.request;
 
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
@@ -19,6 +20,6 @@ public class ClienteRequest {
 	private String nome;
 
 	@NotBlank
-	@Pattern(regexp = "^[A-Za-z0-9+_.-]+@(.+)$", message = "Email deve ser válido")
+	@Email
 	private String email;
 }

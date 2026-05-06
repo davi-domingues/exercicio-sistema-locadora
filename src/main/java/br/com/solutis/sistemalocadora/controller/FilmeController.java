@@ -3,6 +3,7 @@ package br.com.solutis.sistemalocadora.controller;
 import br.com.solutis.sistemalocadora.dto.request.FilmeRequest;
 import br.com.solutis.sistemalocadora.dto.response.FilmeResponse;
 import br.com.solutis.sistemalocadora.service.FilmeService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,7 @@ public class FilmeController {
     }
 
     @PostMapping
-    public ResponseEntity<FilmeResponse> cadastrar(@RequestBody FilmeRequest request){
+    public ResponseEntity<FilmeResponse> cadastrar(@RequestBody @Valid FilmeRequest request){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.cadastrar(request));
     }
 

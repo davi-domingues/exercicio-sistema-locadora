@@ -3,6 +3,7 @@ package br.com.solutis.sistemalocadora.controller;
 import br.com.solutis.sistemalocadora.dto.request.ClienteRequest;
 import br.com.solutis.sistemalocadora.dto.response.ClienteResponse;
 import br.com.solutis.sistemalocadora.service.ClienteService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,7 @@ public class ClienteController {
     }
 
     @PostMapping
-    public ResponseEntity<ClienteResponse> cadastrar(@RequestBody ClienteRequest request){
+    public ResponseEntity<ClienteResponse> cadastrar(@RequestBody @Valid ClienteRequest request){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.cadastrar(request));
     }
 
